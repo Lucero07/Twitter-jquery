@@ -2,9 +2,20 @@
 width: 20%;
 }
 .logoRayo{
-  width: 10%;
+  width: 20%;
+}
+.navbar-default{
+  background-color:#610573;
+      border-color: #FFEB3B;
 }
 
 .navbar-brand>img{
   display: inline;
+}
+.jumbotron{
+  background-color: #610573;
+  color: #faf8fb;
+}
+body{
+  background-color: #000
 }

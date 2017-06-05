@@ -16,6 +16,7 @@
 		var mensaje = $twitt.val();
 
 
+
 		// Creamos elementos
 		var $tarjeta = $("<article />", { "class": "jumbotron" });
 		var $postCheck = $("<input type='checkbox' />");
@@ -46,7 +47,13 @@
 
 	var validarTwitt = function () {
 		var $addButton = $("#botonAgregarTwitt");
-		if($(this).val().trim().length > 0) {
+		var mostrarNumero = $("#contadorCaracteres")
+		var contadorCaracteres = 140-($(this).val().trim().length);
+		mostrarNumero.text(contadorCaracteres);
+		console.log(contadorCaracteres);
+
+
+		if(contadorCaracteres > 0) {
 			$addButton.removeAttr("disabled");
 		} else {
 			$addButton.attr("disabled", true);
